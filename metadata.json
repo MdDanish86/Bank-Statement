@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AI Bank Statement Parser",
+  "description": "An intelligent tool to extract and categorize transactions from raw OCR text of bank statements into a clean CSV format.",
+  "requestFramePermissions": []
+}
