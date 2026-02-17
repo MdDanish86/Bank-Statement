@@ -23,17 +23,8 @@ const fileToBase64 = (file: File): Promise<string> => {
 };
 
 const App: React.FC = () => {
-  const [ocrText, setOcrText] = useState<string>(`
-Date Description Debit Credit Balance
-25/06/2024 ZOMATO ONLINE ORDER 549.00 45,123.50
-Transaction ID: 12345
-24/06/2024 AMAZON PAYMENTS 1,299.00 45,672.50
-23/06/2024 ATM WITHDRAWAL/CASH/MUMBAI 5,000.00 46,971.50
-22-06-2024 SALARY CREDIT JUNE 2024 55,000.00 51,971.50
-IMPS/P2A/54321/SALARY
-21 Jun 2024 UBER INDIA SYSTEMS PVT 350.50 43,028.50
-20.06.2024 UPI/TRANSFER/TO JOHN DOE 1000.00 43,379.00
-`);
+  // ✅ FIXED HERE — removed default sample text
+  const [ocrText, setOcrText] = useState<string>('');
 
   const [csvResult, setCsvResult] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
